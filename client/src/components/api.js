@@ -9,7 +9,7 @@ export const fetchTasks = async () => {
     return response.data;
   } catch (error) {
     console.error('Error fetching tasks:', error);
-    return [];  // Return an empty array in case of error
+    return [];
   }
 };
 
@@ -17,17 +17,11 @@ export const fetchTasks = async () => {
 // Fetch a task by ID
 export const fetchTaskById = async (id) => {
   const response = await axios.get(`${API_URL}`);
-  console.log('Full API response:', response);
-
   const tasksArray = response.data.data;
-
-  // Check if tasksArray is an array
   if (!Array.isArray(tasksArray)) {
     throw new Error("Response data is not an array");
   }
-
   const task = tasksArray.find(task => task.id === parseInt(id));
-
   if (!task) {
     throw new Error(`Task with ID ${id} not found`);
   }

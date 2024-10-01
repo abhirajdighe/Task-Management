@@ -7,9 +7,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/tasks" element={<TaskList />} />
-        <Route path="/tasks/:id" element={<TaskDetail />} />  {/* For viewing and updating task */}
-        <Route path="/tasks/new" element={<TaskForm />} />  {/* For adding new tasks */}
+        <Route path="/" element={<TaskList />} />
+        <Route path="/tasks/:id" element={<TaskDetail />} />
+        <Route path="/tasks/new" element={<TaskForm />} />
       </Routes>
     </Router>
   );
