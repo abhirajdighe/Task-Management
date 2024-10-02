@@ -81,3 +81,8 @@ Replace `<ADD_YOUR_MYSQL_PASSWORD>` with your actual MySQL password.
 ## Additional Notes
 - Ensure that your MySQL server is running before starting the application.
 - You can use Postman to test the API endpoints provided by the server.
+  
+## Frontend Interface Images
+![Task Management Application Image 1](https://github.com/abhirajdighe/Task-Management/blob/main/assets/img1.png?raw=true)
+![Task Management Application Image 2](https://github.com/abhirajdighe/Task-Management/blob/main/assets/img2.png?raw=true)
+![Task Management Application Image 3](https://github.com/abhirajdighe/Task-Management/blob/main/assets/img3.png?raw=true)
