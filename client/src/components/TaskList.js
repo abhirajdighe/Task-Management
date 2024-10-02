@@ -20,6 +20,7 @@ const TaskList = () => {
         setTasks(response.data);  
       } catch (error) {
         console.error('Error fetching tasks:', error);
+        setTasks([])
       }
     };
     loadTasks();
