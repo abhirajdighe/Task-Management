@@ -26,15 +26,18 @@ Before you start, make sure you have the following installed on your machine:
 
 ### Configuration
 Before running the server, you need to configure the database connection. Create a file named config/config.json and add the following configuration:
-{
-  "development": {
-    "username": "root",
-    "password": "<ADD Your MySql Password>",
-    "database": "Task_Management_DB_DEV",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
+
+ ```json
+    {
+      "development": {
+        "username": "root",
+        "password": "<ADD_YOUR_MYSQL_PASSWORD>",
+        "database": "Task_Management_DB_DEV",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+      }
+ ```
+    Replace `<ADD_YOUR_MYSQL_PASSWORD>` with your actual MySQL password.
 
 ### How to Start Server
 1. **Navigate to the server directory**

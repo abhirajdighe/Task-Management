@@ -4,18 +4,20 @@
 This Task Management Application allows users to create, update, and delete tasks efficiently. The application utilizes a client-server architecture, where the client is built with Tailwind, React.js and the server is built with Node.js and Express. The project uses MySQL for data storage, providing a robust backend to manage tasks effectively.
 
 ## Technologies Used
-- **Client**: 
-  - React.js
-  - Tailwind CSS
-  - Axios
-- **Server**: 
-  - Node.js
-  - Express
-  - Sequelize (ORM for MySQL)
-  - MySQL
-- **Development Tools**:
-  - Visual Studio Code
-  - Postman (for API testing)
+### Client:
+![React](https://img.shields.io/badge/-React.js-61DAFB?logo=react&logoColor=black&style=for-the-badge)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)
+![Axios](https://img.shields.io/badge/-Axios-5A29E4?logo=axios&logoColor=white&style=for-the-badge)
+
+### Server:
+![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge)
+![Express](https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white&style=for-the-badge)
+![Sequelize](https://img.shields.io/badge/-Sequelize-52B0E7?logo=sequelize&logoColor=white&style=for-the-badge)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)
+
+### Development Tools:
+![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-007ACC?logo=visual-studio-code&logoColor=white&style=for-the-badge)
+![Postman](https://img.shields.io/badge/-Postman-FF6C37?logo=postman&logoColor=white&style=for-the-badge)
 
 ---
 
@@ -48,6 +50,7 @@ Before you start, make sure you have the following installed on your machine:
 
 ### Configuration
 Before running the server, you need to configure the database connection. Create a file named config/config.json and add the following configuration:
+```json
 {
   "development": {
     "username": "root",
@@ -57,6 +60,8 @@ Before running the server, you need to configure the database connection. Create
     "dialect": "mysql"
   }
 }
+```
+Replace `<ADD_YOUR_MYSQL_PASSWORD>` with your actual MySQL password.
 
 ### How to Start Server
 1. **Navigate to the server directory**
